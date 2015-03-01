@@ -1,13 +1,26 @@
 import media
+import fresh_tomatoes
 
-toy_story = media.Movie("Toy Story", "Story of a boy and his toys",
-						"Pic.jpg",
-						"Link")
+american_sniper = media.Movie("American Sniper", "Story of the cost of War",
+						"http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg",
+						"https://www.youtube.com/watch?v=KYz2wyBy3kc")
 
-#print(toy_story.storyline)
+zero_dark_thirty = media.Movie("Zero Dark Thirty", 
+							   	"Story about the operation to kill UBL", 
+								"https://bizzam.files.wordpress.com/2012/10/zero-dark-thirty.jpg",
+								"https://www.youtube.com/watch?v=YxC_JNz5Vbg")
 
-avatar = media.Movie("Avatar","Marine on Alien Planet","Pic","https://www.youtube.com/watch?v=cRdxXPV9GNQ")
+Charlie_Wilsons_War = media.Movie("Charlie Wilson's War", 
+									"The seminal US history lesson of Afghanistan",
+									"http://ia.media-imdb.com/images/M/MV5BMTgwMDgwMDc4MF5BMl5BanBnXkFtZTYwOTU3MDM4._V1_SY317_CR0,0,214,317_AL_.jpg", 
+									"https://www.youtube.com/watch?v=OHNZUmdqdv8")
 
-print(avatar.storyline)
+lone_survivor = media.Movie("Lone Survivor", 
+							"A story about being your brother's keeper", 
+							"http://tryptryp.com/wp-content/uploads/2014/05/lonesurvivor.jpg", 
+							"https://www.youtube.com/watch?v=yoLFk4JK_RM")
 
-avatar.show_trailer()
+
+movies = [american_sniper, zero_dark_thirty, Charlie_Wilsons_War,lone_survivor]
+
+fresh_tomatoes.open_movies_page(movies)
